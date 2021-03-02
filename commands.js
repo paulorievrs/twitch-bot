@@ -45,7 +45,11 @@ module.exports  = {
     },
 
     async instagram(Bot) {
-        await Bot.say('Me siga no instagram: https://instagram.com/paulorievrs_dev');
+        await Bot.say('Me siga no instagram: https://instagram.com/paulorievrs.dev');
+    },
+
+    async twitter(Bot) {
+        await Bot.say('Me siga no twitter: https://twitter.com/paulorievrs');
     },
 
     async joy(Bot) {

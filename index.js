@@ -1,11 +1,7 @@
 require('dotenv').config()
 const TwitchBot = require('twitch-bot')
-const fs = require('fs');
 
 const commands = require('./commands');
-
-const CLIENT_ID = process.env.CLIENT_ID;
-const STREAMS_URL = "https://api.twitch.tv/paulorievrs_/search";
 
 const Bot = new TwitchBot({
     username: 'paulorievrs_bot',
@@ -37,7 +33,8 @@ Bot.on('message', chatter => {
             "github": commands.github,
             "instagram": commands.instagram,
             "joy": commands.joy,
-            "color": commands.color
+            "color": commands.color,
+            "twitter": commands.twitter,
         }
 
         if(execution[command]) {
@@ -47,4 +44,4 @@ Bot.on('message', chatter => {
         }
     }
 
-})
+});
